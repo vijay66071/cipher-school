@@ -1,40 +1,72 @@
 .finish-test-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f8f9fa;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to right, #dfe9f3, #ffffff); /* Subtle gradient for a clean look */
+  font-family: 'Montserrat', sans-serif; /* Consistent font family */
+  align-items: center; /* Center-align contents horizontally */
+  justify-content: center; /* Center-align contents vertically */
+}
+
+.finish-test-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8); /* Glass effect background */
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  max-width: 600px;
+  width: 100%;
+  text-align: center; /* Center-align text */
+  margin: 2rem; /* Margin for spacing */
+}
+
+.finish-test-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Slightly reduced font size */
+  color: #333;
+}
+
+.finish-test-container p {
+  margin-bottom: 20px;
+  font-size: 1.1rem; /* Adjusted font size */
+  color: #666;
+}
+
+.finish-test-container button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px; /* Rounded corners for a modern look */
+  background: linear-gradient(to right, #1abc9c, #16a085); /* Gradient button */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.finish-test-container button:hover {
+  background: linear-gradient(to right, #0de72e, #e73e05); /* Darker gradient on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
   .finish-test-container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
   }
-  
-  h1 {
-    margin-bottom: 20px;
-    font-size: 2rem;
+
+  .finish-test-container h1 {
+    font-size: 1.8rem;
   }
-  
-  p {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-  }
-  
-  button {
-    padding: 10px 20px;
+
+  .finish-test-container p {
     font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
   }
-  
-  button:hover {
-    background-color: #0056b3;
+
+  .finish-test-container button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
-  
+}

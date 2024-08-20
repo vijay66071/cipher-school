@@ -1,47 +1,58 @@
+/* HomePage.css */
 .home-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: rgba(255, 255, 255, 0.15); /* Glass effect background */
-  backdrop-filter: blur(10px);
-  padding-top: 60px; /* Adjust for fixed navbar */
+  background: linear-gradient(to right, #2c3e50, #4ca1af); /* Gradient background */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .home-header {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.2); /* Softer glass effect */
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.2); /* Glass effect background */
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
-  border-radius: 10px; /* Rounded corners */
-  margin: 2rem auto; /* Centered with space around */
-  max-width: 800px; /* Constrain the width for better readability */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  max-width: calc(100% - 2rem); /* 2rem less on each side */
+  margin: 80px auto; /* Top and bottom margin */
 }
 
 .home-header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: rgb(15, 15, 15);
   margin-bottom: 1rem;
-  color: #1da1f2; /* Matching primary color */
 }
 
 .home-header p {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.781); /* Light gray text */
   margin-bottom: 2rem;
-  color: #333; /* Darker color for contrast */
 }
 
-@media (max-width: 768px) {
-  .home-header h1 {
-    font-size: 2rem;
-  }
+.get-started-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(to right, #1abc9c, #16a085); /* Teal gradient */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  .home-header p {
-    font-size: 1.1rem;
-  }
+.get-started-button:hover {
+  background: linear-gradient(to right, #16a085, #1abc9c); /* Slight hover change */
+  transform: translateY(-2px);
+}
 
-  .home-header {
-    padding: 1.5rem;
-    margin: 1rem auto;
-  }
+.get-started-button:active {
+  background: linear-gradient(to right, #1abc9c, #16a085); /* Slight active change */
+  transform: translateY(0);
 }

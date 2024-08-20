@@ -1,25 +1,10 @@
+/* Footer.css */
 .footer {
-  background: rgba(30, 42, 54, 0.7); /* Darker glass effect */
-  backdrop-filter: blur(10px);
-  color: white;
-  padding: 0.5rem 1rem;
+  background: #184851; /* Updated color */
+  color:#151a1b;
   text-align: center;
-  position: fixed;
-  width: 100%;
+  padding: 1rem;
+  position: absolute;
   bottom: 0;
-  font-size: 0.9rem;
-  border-top: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
-}
-
-.footer a {
-  color: #ffffff;
-  text-decoration: none;
-  margin-left: 0.5rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer a:hover {
-  color: #0d8deb; /* Aligning with the hover color of the navbar */
+  width: 100%;
 }

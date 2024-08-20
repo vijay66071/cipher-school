@@ -1,20 +1,20 @@
-
 .mcq-test-page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f0f4f8;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2c3e50, #4ca1af); /* Gradient to match other pages */
+  font-family: 'Montserrat', sans-serif; /* Consistent font family */
 }
 
 .mcq-test-header {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  background-color: #007bff;
-  color: white;
+  background: rgba(255, 255, 255, 0.8); /* Glass effect background */
+  color: #333;
   align-items: center;
-  border-bottom: 1px solid #0056b3;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for glass effect */
 }
 
 .mcq-test-header h1 {
@@ -34,7 +34,7 @@
 
 .mcq-timer .mcq-time {
   font-size: 1.5rem;
-  color: #ffd700;
+  color: #ffd700; /* Gold color for timer */
 }
 
 .mcq-content-container {
@@ -48,10 +48,11 @@
 .mcq-camera-preview {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 1.5rem; /* Added bottom margin for spacing */
 }
 
 .mcq-camera-preview video {
-  border: 3px solid #007bff;
+  border: 3px solid #007bff; /* Blue border */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -60,10 +61,10 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.8); /* Glass effect background */
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   max-width: 600px;
 }
 
@@ -96,7 +97,7 @@
 
 .mcq-navigation-buttons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -106,19 +107,19 @@
   font-size: 1rem;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
+  border-radius: 30px; /* Rounded corners for consistency */
+  background: linear-gradient(to right, #1abc9c, #16a085); /* Gradient button */
   color: white;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .mcq-navigation-buttons button:disabled {
-  background-color: #ccc;
+  background: #ccc;
   cursor: not-allowed;
 }
 
 .mcq-navigation-buttons button:hover:not(:disabled) {
-  background-color: #0056b3;
+  background: linear-gradient(to right, #0de72e, #e73e05); /* Darker gradient on hover */
 }
 
 .mcq-question-navigation {
@@ -144,29 +145,29 @@
   height: 40px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  background-color: #e9ecef;
+  background: #e9ecef;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .mcq-question-button.mcq-current {
-  background-color: #007bff;
+  background: #007bff; /* Blue color for current question */
   color: white;
 }
 
 .mcq-question-button.mcq-answered {
-  background-color: #28a745;
+  background: #28a745; /* Green color for answered questions */
   color: white;
 }
 
 .mcq-question-button.mcq-unanswered {
-  background-color: #e74c3c;
+  background: #e74c3c; /* Red color for unanswered questions */
   color: white;
 }
 
 .mcq-question-button:hover {
-  background-color: #0056b3;
+  background: #0056b3; /* Darker blue on hover */
   color: white;
 }
 

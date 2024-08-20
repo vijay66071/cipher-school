@@ -1,29 +1,28 @@
-
 .test-start-page {
-  background-color: #f7f9fc;
+  background: linear-gradient(to right, #2c3e50, #4ca1af); /* Gradient background to match login page */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
-  padding: 0; 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center; /* Centered the content vertically */
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Consistent font family */
 }
 
 .test-start-page .test-container {
-  background-color: #ffffff;
+  background: rgba(42, 75, 86, 0.8); /* Glass effect background */
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Increased shadow for glass effect */
   text-align: center;
   max-width: 600px;
   width: 100%;
-  margin-top: 20px; 
+  margin: 20px auto; /* Centered the container */
 }
 
 .test-start-page .test-container h1 {
   font-size: 2rem;
-  color: #333;
+  color: #ffffff; /* Light text color for better contrast */
   margin-bottom: 20px;
 }
 
@@ -36,32 +35,37 @@
 
 .test-start-page .video-preview {
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adjusted shadow for better consistency */
 }
 
 .test-start-page .video-preview video {
   width: 100%;
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .test-start-page .proceed-button {
   padding: 12px 24px;
-  background-color: #28a745;
-  color: white;
+  background: linear-gradient(to right, #0de72e, #e73e05); /* Gradient background to match other buttons */
+  color: #ffffff;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center; /* Center text inside the button */
 }
 
 .test-start-page .proceed-button:hover {
-  background-color: #218838;
+  background: linear-gradient(to right, #ce7407, #45b024); /* Darker gradient on hover */
   transform: scale(1.05);
+}
+
+.test-start-page .proceed-button:active {
+  background: linear-gradient(to right, #cb4413, #50a633); /* Even darker gradient on active */
 }
 
 .test-start-page .error-message {

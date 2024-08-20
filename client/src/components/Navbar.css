@@ -1,31 +1,30 @@
+/* Navbar.css */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
-  background: rgba(255, 255, 255, 0.15); /* Glass effect background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  background: rgba(24, 72, 81, 0.7); /* Semi-transparent for glass effect */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 .navbar-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #151a1b;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
-  flex-direction: row;
   gap: 1.5rem;
   margin: 0;
   padding: 0;
@@ -33,19 +32,19 @@
 
 .navbar-links a,
 .navbar-button {
-  color: #ffffff;
+  color: #151a1b;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   padding: 0.75rem 1rem;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.25); /* Glass effect on links */
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar-button {
-  background-color: rgba(255, 255, 255, 0.25); /* Match glass effect */
+  background-color: rgba(255, 255, 255, 0.25);
   color: #1da1f2;
   text-align: center;
   cursor: pointer;
@@ -64,19 +63,4 @@
 .navbar-links a.active {
   background-color: rgba(255, 255, 255, 0.75);
   color: #1da1f2;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 1rem;
-  }
-
-  .navbar-logo {
-    font-size: 1.5rem;
-  }
-
-  .navbar-links a,
-  .navbar-button {
-    font-size: 0.9rem;
-  }
 }
